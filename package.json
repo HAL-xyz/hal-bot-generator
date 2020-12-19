@@ -1,0 +1,25 @@
+{
+  "name": "hal-recipes-script",
+  "version": "1.0.0",
+  "description": "Create HAL recipes automatically",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "yearnTrackDeposit": "node src/dapps/yearn/trackDeposit/index.js > ./logs/yearnTrackDeposit.txt",
+    "yearnTrackWithdraw": "node src/dapps/yearn/trackWithdraw/index.js > ./logs/yearnTrackWithdraw.txt"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bignumber.js": "^9.0.1",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
