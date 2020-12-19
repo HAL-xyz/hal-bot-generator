@@ -14,7 +14,7 @@ const yearnEndPoint = 'https://api.yearn.tools/vaults';
     const threshold = (process.env.YEARN_THRESHOLD / tokenPrice);
     console.log(chalk`
       {blue.bold Trigger's parameter}\n\n
-      {yellow title: {white yVault Deposit on ${vault.tokenSymbolAlias}}}\n
+      {yellow title: {white yVault Withdraw on ${vault.tokenSymbolAlias}}}\n
       {yellow vault: {white ${vault.address}}}\n
       {yellow vaultAlias: {white ${vault.vaultAlias}}}\n
       {yellow tokenSymbolAlias: {white ${vault.tokenSymbolAlias}}}\n
@@ -25,7 +25,7 @@ const yearnEndPoint = 'https://api.yearn.tools/vaults';
     `);
     if (process.env.ENV === 'test') {
       const output = input({
-        title: `yVault Withdrawal on ${vault.tokenSymbolAlias}`,
+        title: `yVault Withdraw on ${vault.tokenSymbolAlias}`,
         vaultAddress: vault.address,
         vaultAlias: vault.vaultAlias,
         tokenSymbolAlias: vault.tokenSymbolAlias,
