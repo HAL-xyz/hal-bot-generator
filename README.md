@@ -4,7 +4,9 @@ We are lazy, and we are damn proud of it 😴. So, we decided to create a script
 
 ## Use case
 Our goal was to use HAL to create a Bot notifying any deposit or withdraw with a USD value higher than X, on any yVault, and send a message both on Telegram and Twitter.
+
 That means 16 vaults * 2 use cases (deposit and withdraw) * 2 actions (Telegram and Twitter) -> 64 triggers (manually checking che current price of each token to convert the threshold from fiat to the vault token).
+
 This script solves this and it's generalized for any similar bot creation.
 
 ## How to install
